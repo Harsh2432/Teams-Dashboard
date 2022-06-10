@@ -11,6 +11,7 @@ body {
 }
 
 .option-section {
+    background-color: limegreen;
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -27,13 +28,34 @@ body {
 }
 
 .bd-bt {
-    border-bottom: 5px solid #00B74A;
+    border-bottom: 5px solid limegreen;
 }
 
 .bd-lt {
     border-right: 5px solid #fff;
 }
 
-.option-section ul .nav-item:hover {
+.option-section .nav .nav-item:hover {
+    background-color: #7CDF7C;
+}
+
+.option-section .nav .nav-item:nth-child(4) {
+    background-color: #7CDF7C;
+}
+
+#newSchedule {
     background-color: limegreen;
+    color: #fff;
+    font-weight: bold;
+}
+
+#search {
+    background-color: limegreen;
+    color: #fff;
+}
+
+#update {
+    background-color: limegreen;
+    color: #fff;
+    font-weight: bold;
 }
