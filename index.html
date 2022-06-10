@@ -17,42 +17,43 @@
 
 <body>
 
-    <section class="option-section bg-success">
+    <section class="option-section">
         <nav class="navbar w-100 p-4">
             <div class="container-fluid">
-                <a class="navbar-brand d-flex justify-content-center align-items-center gap-2 text-dark" href="#">
+                <a class="navbar-brand d-flex justify-content-center align-items-center gap-2 text-dark fw-bold"
+                    href="#">
                     <img src="img/logo.png" alt="" width="50" height="50" class="d-inline-block align-text-center">
                     Brand-Logo
                 </a>
             </div>
         </nav>
 
-        <ul class="nav flex-column w-100">
-            <li class="nav-item d-flex justify-content-center align-items-center">
+        <ul class="nav flex-column w-100" id="group-links">
+            <li class="nav-item d-flex justify-content-center align-items-center group-link-item">
                 <i class="bi-pie-chart-fill text-white"></i>
                 <a class="nav-link text-light" href="#">Dashboard</a>
             </li>
-            <li class="nav-item d-flex justify-content-center align-items-center">
+            <li class="nav-item d-flex justify-content-center align-items-center group-link-item">
                 <i class="bi-clipboard-data-fill text-white"></i>
                 <a class="nav-link text-light" href="#">Tactics Vault</a>
             </li>
-            <li class="nav-item d-flex justify-content-center align-items-center">
+            <li class="nav-item d-flex justify-content-center align-items-center group-link-item">
                 <i class="bi-person-fill text-white"></i>
                 <a class="nav-link text-light" href="#">Teams</a>
             </li>
-            <li class="nav-item d-flex justify-content-center align-items-center">
+            <li class="nav-item d-flex justify-content-center align-items-center group-link-item bd-lt">
                 <i class="bi-pencil-square text-white"></i>
                 <a class="nav-link text-light" href="#">Schedule Generator</a>
             </li>
-            <li class="nav-item d-flex justify-content-center align-items-center">
+            <li class="nav-item d-flex justify-content-center align-items-center group-link-item">
                 <i class="bi-calendar-week-fill text-white"></i>
                 <a class="nav-link text-light" href="#">Weekly Training Plans</a>
             </li>
-            <li class="nav-item d-flex justify-content-center align-items-center">
+            <li class="nav-item d-flex justify-content-center align-items-center group-link-item">
                 <i class="bi-bar-chart-fill text-white"></i>
                 <a class="nav-link text-light" href="#">Teams Matrics</a>
             </li>
-            <li class="nav-item d-flex justify-content-center align-items-center">
+            <li class="nav-item d-flex justify-content-center align-items-center group-link-item">
                 <i class="bi-gear-fill text-white"></i>
                 <a class="nav-link text-light" href="#">Customizations</a>
             </li>
@@ -108,11 +109,11 @@
         <section class="inner-section">
             <nav class="navbar p-1">
                 <div class="container-fluid">
-                    <button class="btn btn-success me-2" id="newSchedule" type="button" data-bs-toggle="modal"
+                    <button class="btn me-2" id="newSchedule" type="button" data-bs-toggle="modal"
                         data-bs-target="#create-schedule">Add New Schedule</button>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-success" type="submit">
+                        <button class="btn" id="search" type="submit">
                             <i class="bi-search"></i>
                         </button>
                     </form>
@@ -136,7 +137,7 @@
                                 <i class="bi-trash3-fill text-danger fs-5 fw-bold"></i>
                             </button>
                             <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                                <i class="bi-caret-down-fill fs-5 fw-bold"></i>
+                                <i class="bi-caret-down-fill"></i>
                             </button>
                         </div>
                     </div>
@@ -154,7 +155,7 @@
                             </div>
                         </div>
                         <div class="button-item">
-                            <button class="btn btn-success me-2" type="button">Update</button>
+                            <button class="btn me-2" id="update" type="button">Update</button>
                         </div>
                     </div>
                     <div class="card-footer border-dark">
@@ -220,7 +221,7 @@
                             </div>
                         </div>
                         <div class="button-item">
-                            <button class="btn btn-success me-2" type="button">Update</button>
+                            <button class="btn me-2" id="update" type="button">Update</button>
                         </div>
                     </div>
                     <div class="card-footer border-dark">
@@ -286,7 +287,7 @@
                             </div>
                         </div>
                         <div class="button-item">
-                            <button class="btn btn-success me-2" type="button">Update</button>
+                            <button class="btn me-2" id="update" type="button">Update</button>
                         </div>
                     </div>
                     <div class="card-footer border-dark">
@@ -352,7 +353,7 @@
                             </div>
                         </div>
                         <div class="button-item">
-                            <button class="btn btn-success me-2" type="button">Update</button>
+                            <button class="btn me-2" id="update" type="button">Update</button>
                         </div>
                     </div>
                     <div class="card-footer border-dark">
@@ -427,6 +428,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
